@@ -54,10 +54,10 @@
   <div class="form-group row">
     <label for="orderNumber" class="col-3 col-form-label">Order Number</label> 
     <div class="col-9">
-      <input id="orderNumber" name="entry.310200994" placeholder="ex. 16987" type="text" required="required" class="form-control">
+      <input id="orderNumber" name="entry.310200994" placeholder="ex. 16987" type="text" required class="form-control">
     </div>
   </div>
-  <div class="form-group row">
+  <div class="form-group row"> 
     <label class="col-3 col-form-label" for="hcpFirst">HCP First</label> 
     <div class="col-9">
       <input id="hcpFirst" name="entry.407111904" type="text" required="required" class="form-control">
@@ -177,13 +177,13 @@
   <div class="form-group row">
     <label for="phone" class="col-3 col-form-label">Phone</label> 
     <div class="col-9">
-      <input id="phone" name="entry.1611653414" type="text" class="form-control" maxlength="10">
+      <input id="phone" name="entry.1611653414" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
     <label for="fax" class="col-3 col-form-label">Fax</label> 
     <div class="col-9">
-      <input id="fax" name="entry.1194449829" type="text" class="form-control" maxlength="10">
+      <input id="fax" name="entry.1194449829" type="text" class="form-control">
     </div>
   </div>
     <div class="form-group row">
@@ -307,32 +307,32 @@ function postToGoogle() {
                 var field14 = $("#selectTextbook").val();
                 var field15 = $("#cost").val();
         
-        if(field1 == ""){
-          alert('Please Fill Your HCP First Name');
-          document.getElementById("hcpFirst").focus();
-          return false;
-        }
-        if(field1 == ""){
-          alert('Please Fill Your HCP Last Name');
-          document.getElementById("hcpLast").focus();
-          return false;
-        }
+        // if(field1 == ""){
+        //   alert('Please Fill Your HCP First Name');
+        //   document.getElementById("hcpFirst").focus();
+        //   return false;
+        // }
+        // if(field1 == ""){
+        //   alert('Please Fill Your HCP Last Name');
+        //   document.getElementById("hcpLast").focus();
+        //   return false;
+        // }
 
-        if(field11 == "" || field11.length > 10 || field11.length < 10){
-          alert('Please Fill Your Phone Number Only 10 Digits No Dashes');
-          document.getElementById("phone").focus();
-          return false;
-        }
-        if(field12 == "" || field11.length > 10 || field11.length < 10){
-          alert('Please Fill Your Fax Number');
-          document.getElementById("fax").focus();
-          return false;
-        }
-        if(field13 == ""){
-          alert('Please Fill Your Email');
-          document.getElementById("email").focus();
-          return false;
-        }
+        // if(field11 == "" || field11.length > 10 || field11.length < 10){
+        //   alert('Please Fill Your Phone Number Only 10 Digits No Dashes');
+        //   document.getElementById("phone").focus();
+        //   return false;
+        // }
+        // if(field12 == "" || field11.length > 10 || field11.length < 10){
+        //   alert('Please Fill Your Fax Number');
+        //   document.getElementById("fax").focus();
+        //   return false;
+        // }
+        // if(field13 == ""){
+        //   alert('Please Fill Your Email');
+        //   document.getElementById("email").focus();
+        //   return false;
+        // }
   
                 $.ajax({
                     url: "https://docs.google.com/forms/d/e/1FAIpQLSdvTDT4oIIQ4Vyf5P6akMXgY7e49eBEmLlfuZCiGEgeg-m3IA/formResponse?",
