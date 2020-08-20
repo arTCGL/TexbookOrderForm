@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
@@ -52,37 +53,37 @@
 
 <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
   <div class="form-group row">
-    <label for="orderNumber" class="col-3 col-form-label">Order Number</label> 
+    <label for="orderNumber" class="col-3 col-form-label">Order Number<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <input id="orderNumber" name="entry.310200994" placeholder="ex. 16987" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row"> 
-    <label class="col-3 col-form-label" for="hcpFirst">HCP First</label> 
+    <label class="col-3 col-form-label" for="hcpFirst">HCP First<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="hcpFirst" name="entry.407111904" type="text" class="form-control" required>
+      <input id="hcpFirst" name="entry.407111904" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="hcpLast" class="col-3 col-form-label">HCP Last</label> 
+    <label for="hcpLast" class="col-3 col-form-label">HCP Last<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="hcpLast" name="entry.790607589" type="text" class="form-control" required>
+      <input id="hcpLast" name="entry.790607589" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="degree" class="col-3 col-form-label">Degree</label> 
+    <label for="degree" class="col-3 col-form-label">Degree<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="degree" name="entry.18222752" type="text" class="form-control" required>
+      <input id="degree" name="entry.18222752" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="institution" class="col-3 col-form-label">Institution</label> 
+    <label for="institution" class="col-3 col-form-label">Institution<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="institution" name="entry.1402154559" type="text" class="form-control" required>
+      <input id="institution" name="entry.1402154559" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="certCode" class="col-3 col-form-label">Certication Code</label> 
+    <label for="certCode" class="col-3 col-form-label">Certication Code<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <select id="certCode" name="entry.318290760" class="custom-select">
         <option value="RRT">RRT</option>
@@ -99,21 +100,21 @@
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-3 col-form-label" for="streetAddress">Street Address</label> 
+    <label class="col-3 col-form-label" for="streetAddress">Street Address<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="streetAddress" name="entry.1937510216" type="text" class="form-control" required>
+      <input id="streetAddress" name="entry.1937510216" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="city" class="col-3 col-form-label">City</label> 
+    <label for="city" class="col-3 col-form-label">City<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="city" name="entry.1098135271" type="text" class="form-control" required>
+      <input id="city" name="entry.1098135271" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="state" class="col-3 col-form-label">State</label> 
+    <label for="state" class="col-3 col-form-label">State<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <select id="state" name="entry.725014568" class="custom-select" required>
+      <select id="state" name="entry.725014568" class="custom-select" required ="required">
   <option value="AL">AL</option>
   <option value="AK">AK</option>
   <option value="AR">AR</option>  
@@ -169,13 +170,13 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="zip" class="col-3 col-form-label">Zip</label> 
+    <label for="zip" class="col-3 col-form-label">Zip<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="zip" name="entry.1930981283" type="text" class="form-control" required>
+      <input id="zip" name="entry.1930981283" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="phone" class="col-3 col-form-label">Phone</label> 
+    <label for="phone" class="col-3 col-form-label">Phone<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <input id="phone" name="entry.1611653414" type="text" class="form-control">
     </div>
@@ -187,15 +188,15 @@
     </div>
   </div>
     <div class="form-group row">
-    <label for="email" class="col-3 col-form-label">Email</label> 
+    <label for="email" class="col-3 col-form-label">Email<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <input id="email" name="entry.1920936398" type="text" class="form-control" required>
+      <input id="email" name="entry.1920936398" type="text" class="form-control" required ="required">
     </div>
   </div>
   <div class="form-group row">
-    <label for="selectTextbook" class="col-3 col-form-label">Select Textbook</label> 
+    <label for="selectTextbook" class="col-3 col-form-label">Select Textbook<span style="color:red;"> *</span></label> 
     <div class="col-9">
-      <select id="selectTextbook" name="entry.401067085" class="custom-select" onChange="return setCost()" required>
+      <select id="selectTextbook" name="entry.401067085" class="custom-select" onChange="return setCost()" required ="required">
         <option data-mail="1" value="MacDonald's Atlas of Procedures in Neonatology (6th Edition) - (978-1-496394255)">MacDonald's Atlas of Procedures in Neonatology (6th Edition) - (978-1-496394255)</option>
         <option data-mail="2" value="Contemporary Diagnosis and Management of Neonatal Respiratory Diseases (3rd Edition) - (978-1-93198106)">Contemporary Diagnosis and Management of Neonatal Respiratory Diseases (3rd Edition) - (978-1-93198106)</option>
         <option data-mail="3" value="Avery's Neonatal Board Review: Certification and Clinical Refresher (1st Edition) - (978-032354932)">Avery's Neonatal Board Review: Certification and Clinical Refresher (1st Edition) - (978-032354932)</option>
@@ -218,7 +219,7 @@
   </div> 
   <div class="form-group row">
     <div class="offset-3 col-9" data-toggle="modal" data-target="#exampleModal">
-      <button id="send" name="submit" type="submit" class="btn btn-primary">Submit</button>
+      <button id="send" name="submit" type="submit" class="btn btn-primary" disabled>Submit</button>
     </div>
   </div>
 </form>
@@ -257,6 +258,19 @@
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+
+    let txt = document.querySelectorAll('[type="text"]');
+    for (let i = 0; i < txt.length; i++) {
+        txt[i].oninput = () => {
+            if (!(txt[0].value == '') && !(txt[1].value == '') && !(txt[2].value == '') && !(txt[3].value == '') && !(txt[4].value == '') && !(txt[5].value == '') && !(txt[6].value == '') && !(txt[7].value == '') && !(txt[8].value == '') && !(txt[10].value == '')) {
+                send.removeAttribute('disabled')
+            }
+        }
+    }
+</script>
+
   <script>
     function setCost(){
     // find the dropdown
@@ -289,6 +303,28 @@
     } 
 }
   </script>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
   <script>
 function postToGoogle() {
                 var field1 = $("#orderNumber").val();
@@ -353,6 +389,6 @@ function postToGoogle() {
         return false;
             }
 </script>
-  
+
 </body>
 </html>
