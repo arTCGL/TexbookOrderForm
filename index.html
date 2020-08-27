@@ -41,7 +41,7 @@
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
                 <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
-                    Chiesi Textbook Program Order Form</h2>
+                    Curosurf Textbook Program Order Form</h2>
                 <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
                     Please enter all HCP information in the Order Form</h3>
             </div>
@@ -70,12 +70,12 @@
       <input id="hcpLast" name="entry.790607589" type="text" class="form-control" required ="required">
     </div>
   </div>
-  <div class="form-group row">
+  <!--<div class="form-group row">
     <label for="degree" class="col-3 col-form-label">Degree<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <input id="degree" name="entry.18222752" type="text" class="form-control" required ="required">
     </div>
-  </div>
+  </div>-->
   <div class="form-group row">
     <label for="institution" class="col-3 col-form-label">Institution<span style="color:red;"> *</span></label> 
     <div class="col-9">
@@ -86,12 +86,12 @@
     <label for="certCode" class="col-3 col-form-label">Certication Code<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <select id="certCode" name="entry.318290760" class="custom-select">
-        <option value="RRT">RRT</option>
-        <option value="RN">RN</option>
-        <option value="PHMCST">PHMCST</option>
-        <option value="PA">PA</option>
-        <option value="MD">MD</option>
-        <option value="RC">RC</option>
+        <option value="RRT">RRT (Registered Respiratory Therapist)</option>
+        <option value="RN">RN (Registered Nurse)</option>
+        <option value="PHMCST">PHMCST (Pharmacist)</option>
+        <option value="PA">PA (Phyician Assitant)</option>
+        <option value="MD">MD (Doctor of Medicine)</option>
+        <option value="RC">RC (Resiratory Care)</option>
         <option value="RCT">RCT</option>
         <option value="RCP">RCP</option>
         <option value="APRN">APRN</option>
@@ -181,14 +181,14 @@
       <input id="phone" name="entry.1611653414" type="text" class="form-control">
     </div>
   </div>
-  <div class="form-group row">
+  <!--<div class="form-group row">
     <label for="fax" class="col-3 col-form-label">Fax</label> 
     <div class="col-9">
       <input id="fax" name="entry.1194449829" type="text" class="form-control">
     </div>
-  </div>
+  </div>-->
     <div class="form-group row">
-    <label for="email" class="col-3 col-form-label">Email<span style="color:red;"> *</span></label> 
+    <label for="email" class="col-3 col-form-label">HCP Email<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <input id="email" name="entry.1920936398" type="text" class="form-control" required ="required">
     </div>
@@ -264,7 +264,7 @@
     let txt = document.querySelectorAll('[type="text"]');
     for (let i = 0; i < txt.length; i++) {
         txt[i].oninput = () => {
-            if (!(txt[0].value == '') && !(txt[1].value == '') && !(txt[2].value == '') && !(txt[3].value == '') && !(txt[4].value == '') && !(txt[5].value == '') && !(txt[6].value == '') && !(txt[7].value == '') && !(txt[8].value == '') && !(txt[10].value == '')) {
+            if (!(txt[0].value == '') && !(txt[1].value == '') && !(txt[2].value == '') && !(txt[3].value == '') && !(txt[4].value == '') && !(txt[5].value == '') && !(txt[6].value == '') && !(txt[7].value == '') && !(txt[8].value == '') && !(txt[9].value == '')) {
                 send.removeAttribute('disabled')
             }
         }
