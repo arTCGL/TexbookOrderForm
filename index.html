@@ -198,6 +198,7 @@
     <label for="selectTextbook" class="col-3 col-form-label">Select Textbook<span style="color:red;"> *</span></label> 
     <div class="col-9">
       <select id="selectTextbook" name="entry.401067085" class="custom-select" onChange="return setCost()" required ="required">
+        <option hidden>Choose textbook from list</option>
         <option data-mail="1" value="MacDonald's Atlas of Procedures in Neonatology (6th Edition) - (978-1-496394255)">MacDonald's Atlas of Procedures in Neonatology (6th Edition) - (978-1-496394255)</option>
         <option data-mail="2" value="Contemporary Diagnosis and Management of Neonatal Respiratory Diseases (3rd Edition) - (978-1-93198106)">Contemporary Diagnosis and Management of Neonatal Respiratory Diseases (3rd Edition) - (978-1-93198106)</option>
         <option data-mail="3" value="Avery's Neonatal Board Review: Certification and Clinical Refresher (1st Edition) - (978-032354932)">Avery's Neonatal Board Review: Certification and Clinical Refresher (1st Edition) - (978-032354932)</option>
@@ -216,7 +217,7 @@
         <div class="input-group-prepend">
           <div class="input-group-text">$</div>
         </div> 
-        <input id="cost" name="entry.35781892" type="text" class="form-control" value="99.00" readonly>
+        <input id="cost" name="entry.35781892" type="text" class="form-control" value="0.00" readonly>
       </div>
     </div>
   </div> 
